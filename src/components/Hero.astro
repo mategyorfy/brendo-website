@@ -1,0 +1,29 @@
+---
+import { Image } from "astro:assets";
+import logo from "../assets/app_explore_memories.png";
+import { Icon } from "astro-icon/components";
+---
+
+<div class="flex flex-1 max-lg:pt-8 pt-4 lg:flex-row flex-col flex-wrap w-full border-0 border-red-800">
+  <div class="flex flex-1 flex-col max-w-[80%] space-y-12 min-h-full items-start justify-center bg-none text-center">
+    <h1 class="font-inter text-3xl lg:text-5xl font-extrabold lg:leading-[60px] text-start">Discover Fun Activities Waiting For You</h1>
+
+    <p class="text-start font-inter font-regular text-lg tracking-wide">
+      Let <span class="font-bold">Brendo</span> help you find program ideas <br /> and spend quality offline time with your <br /> companions
+    </p>
+
+    <div class="flex flex-row space-x-2 rounded-lg bg-black justify-center items-center py-3 px-6 lg:py-4 lg:px-8">
+      <span class="text-white text-start font-inter text-md lg:text-lg font-regular">Get the app</span>
+      <Icon name="arrow-right" class="text-white text-xl" />
+    </div>
+  </div>
+  <div class="flex flex-1 max-lg:mt-8 items-center justify-center w-full h-full bg-none">
+    <Image
+      class="w-min max-w-[70%] flex object-cover border-0 border-violet-800"
+      src={logo}
+      widths={[logo.width]}
+      sizes={`(max-width: 360px) 240px, (max-width: 720px) 540px, (max-width: 1600px) 720px, ${logo.width}px`}
+      alt="A description of my image."
+    />
+  </div>
+</div>

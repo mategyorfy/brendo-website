@@ -1,0 +1,28 @@
+---
+import { Image } from "astro:assets";
+import logo from "../assets/site_logo.svg";
+
+const aspectRatio = logo.width / logo.height;
+---
+
+<header class="top-0 bg-none flex padding-x justify-center items-center w-full h-16 absolute">
+  <div class="max-container bg-none w-full relative flex flex-row items-center flex-nowrap h-full border-0 border-blue-700">
+    <div class="h-full flex w-[30%] flex-row items-center justify-start border-0 border-yellow-800">
+      <Image
+        class="w-min h-[50%] flex object-cover border-0 border-violet-800"
+        src={logo}
+        widths={[logo.width]}
+        sizes={`(max-width: 360px) 240px, (max-width: 720px) 540px, (max-width: 1600px) 720px, ${logo.width}px`}
+        alt="A description of my image."
+      />
+      <h1 class="text-lg font-inter font-bold tracking-wide text-black">Brendo</h1>
+    </div>
+
+    <ul class="flex-1 max-sm:hidden sm:flex lg:max-w-[50%] text-black space-x-4 w-full justify-between border-0 border-red-700">
+      <li class="font-inter font-medium">Home</li>
+      <li class="font-inter font-medium">Explore</li>
+      <li class="font-inter font-medium">Download app</li>
+      <li class="font-inter font-medium">Contact us</li>
+    </ul>
+  </div>
+</header>
