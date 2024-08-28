@@ -1,36 +1,45 @@
 ---
-import "../styles/global.css"
-import "../../public/styles.css"
+import "../styles/global.css";
+import "../../public/styles.css";
 
 interface Props {
-	title: string;
+  title: string;
 }
 
 const { title } = Astro.props;
-
 ---
 
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="description" content="Astro description" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
-	</head>
-	<body>
-		<slot />
-	</body>
-</html>
- <style is:global>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Astro description" />
+    <meta name="viewport" content="width=device-width" />
+    <!--   <link rel="apple-touch-icon" sizes="16x16" href="/site_logo.png" />
+    <link rel="icon" type="image/svg+xml" href="/site_logo.svg" />
+    <link rel="icon" type="image/png" href="/site_logo.png" />
+    <link rel="icon" type="image/x-icon" href="/site_logo.ico" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="mask-icon" href="site_logo.svg" color="#000000" /> -->
 
-	html {
-		font-family: inter;
-	}
-	code {
-		font-family:
-		inter
-	}
-</style> 
+    <link rel="icon" href="/favicon.ico" sizes="48x48" /><!-- REVISED (Aug 11, 2023)! -->
+    <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml" /><!-- REVISED (Aug 11, 2023)! -->
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="mask-icon" href="favicon.svg" color="#000000" />
+    <!--     <link rel="manifest" href="/site.webmanifest" /> -->
+
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+  <body class="flex flex-col relative border-green-800 border-0">
+    <slot />
+  </body>
+</html>
+<style is:global>
+  html {
+    font-family: inter;
+  }
+  code {
+    font-family: inter;
+  }
+</style>

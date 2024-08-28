@@ -23,9 +23,9 @@ console.log(right_blob_width * 0.8);
 console.log(right_blob_height * 0.8);
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout title="Brendo">
   <Image
-    class=`z-[-1] max-w-[60%] top-0 right-0 absolute object-contain m-0 p-0 border-0 border-violet-800`
+    class=`z-[-1] absolute max-w-[50%] top-0 right-0  object-cover m-0 p-0 border-0 border-violet-800`
     src={right_blob}
     widths={[right_blob.width]}
     sizes={`(max-width: 360px) 240px, (max-width: 720px) 540px, (max-width: 1600px) 720px, ${right_blob.width}px`}
@@ -33,18 +33,33 @@ console.log(right_blob_height * 0.8);
   />
 
   <Image
-    class="absolute z-[-1] flex max-lg:top-[150%] top-[100%] left-0 object-cover border-0 border-violet-800"
+    class="overflow-hidden z-[-1] absolute max-w-[50%] md:hidden top-[20%] flex left-0 object-cover border-0 border-violet-800"
+    src={left_blob}
+    widths={[left_blob.width]}
+    sizes={`(max-width: 360px) 240px, (max-width: 720px) 540px, (max-width: 1600px) 720px, ${left_blob.width}px`}
+    alt="A description of my image."
+  />
+  <Image
+    class=`z-[-1] absolute max-w-[50%]  right-0 md:hidden top-[50%]  object-cover m-0 p-0 border-0 border-violet-800`
+    src={right_blob}
+    widths={[right_blob.width]}
+    sizes={`(max-width: 360px) 240px, (max-width: 720px) 540px, (max-width: 1600px) 720px, ${right_blob.width}px`}
+    alt="A description of my image."
+  />
+
+  <Image
+    class="overflow-hidden z-[-1] absolute max-w-[50%] flex bottom-0 left-0 object-cover border-0 border-violet-800"
     src={left_blob}
     widths={[left_blob.width]}
     sizes={`(max-width: 360px) 240px, (max-width: 720px) 540px, (max-width: 1600px) 720px, ${left_blob.width}px`}
     alt="A description of my image."
   />
   <Header />
-  <main class="max-container padding-x border-0 my-16 border-red-700 w-full bg-transparent">
+  <main class="flex flex-col max-container padding-x min-h-full border-0 pt-16 border-violet-700 w-full bg-transparent">
     <Hero />
     <Features />
     <DownloadApp />
-    <ContactUs />
-    <Footer />
+    <!-- <ContactUs /> -->
   </main>
+  <Footer />
 </Layout>

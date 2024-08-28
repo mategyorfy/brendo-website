@@ -1,0 +1,28 @@
+---
+import DownloadAppButton from "./DownloadAppButton.astro";
+import { Image } from "astro:assets";
+
+import app_ios_android from "../assets/app_ios_android.png";
+---
+
+<div class="border-0 flex border-red-800 mt-28">
+  <div class="flex flex-col lg:flex-row border-0 justify-evenly border-blue-800 items-center">
+    <div class="flex flex-col lg:max-w-[40%] space-y-6">
+      <h1 class="whitespace-nowrap font-inter font-medium text-3xl">Download <span class="font-extrabold">Brendo</span></h1>
+      <p class="font-inter font-regular text-lg">
+        Brendo is available for free on both iOS and Android. You can find them their corresponding app stores or use the button below
+      </p>
+      <div class="flex flex-row flex-wrap gap-6 lg:gap-8">
+        <DownloadAppButton title="Download on the" subtitle="App Store" icon="apple_logo" />
+        <DownloadAppButton title="Get it on" subtitle="Google Play" icon="playstore_logo" />
+      </div>
+    </div>
+    <Image
+      class="max-lg:max-w-[80%] lg:max-w-[30%] max-lg:pt-8 border-0 border-violet-800"
+      src={app_ios_android}
+      widths={[app_ios_android.width]}
+      sizes={`(max-width: 360px) 240px, (max-width: 720px) 540px, (max-width: 1600px) 720px, ${app_ios_android.width}px`}
+      alt="A description of my image."
+    />
+  </div>
+</div>

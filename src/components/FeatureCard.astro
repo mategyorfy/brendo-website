@@ -5,8 +5,12 @@ import { Icon } from "astro-icon/components";
 const { title, desc, icon } = Astro.props;
 ---
 
-<div class="">
-  <Icon name={icon} class="text-black text-xl" />
-  <h1>{title}</h1>
-  <p>{desc}</p>
+<div
+  class="border-0 basis-80 aspect-[1.2] min-w-56 border-green-800 flex shadow-2xl max-w-[90%] text-center space-y-3 justify-between py-8 px-4 items-center flex-col bg-white rounded-3xl"
+>
+  <Icon name={icon} class="text-black text-xl top-0" size={40} />
+  <div class="space-y-3 border-0 aspect-[4/2] border-violet-800">
+    <h1 class="font-inter font-bold text-[18px] tracking-wide">{title}</h1>
+    <p class="font-inter object-contain font-regular lg:text-[16px] text-[14px] tracking-wider">{desc}</p>
+  </div>
 </div>

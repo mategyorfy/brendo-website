@@ -1,0 +1,32 @@
+---
+import { Icon } from "astro-icon/components";
+import { Image } from "astro:assets";
+import logo from "../assets/full_small_logo_white.png";
+---
+
+<div class="bg-palette_3 pt-10 pb-10 mt-32">
+  <div class="flex flex-col max-container max-md:items-center md:flex-row gap-12 padding-x w-full">
+    <!-- <Icon name={"full_small_logo_white"} class="text-black border-2 border-white" size={100} /> -->
+    <Image
+      class=` max-w-32 object-cover m-0 p-0 border-0 border-violet-800`
+      src={logo}
+      widths={[logo.width]}
+      sizes={`(max-width: 360px) 240px, (max-width: 720px) 540px, (max-width: 1600px) 720px, ${logo.width}px`}
+      alt="A description of my image."
+    />
+    <div class="flex md:flex-row flex-col gap-10">
+      <div class="border-violet-800 border-0 flex flex-col gap-4 pt-2 text-white font-inter text-lg font-light">
+        <span class="font-semibold">Navigation</span>
+        <span>Home</span>
+        <span>Explore</span>
+        <span>Contact us</span>
+        <span>Download app</span>
+      </div>
+      <div class="border-pink-800 border-0 flex flex-col gap-4 pt-2 text-white font-inter text-lg font-light">
+        <span class="font-semibold">Documents</span>
+        <span>Pricacy Policy</span>
+        <span>Terms & Conditons</span>
+      </div>
+    </div>
+  </div>
+</div>

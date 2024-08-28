@@ -6,6 +6,9 @@ export default {
 	theme: {
 		extend: {
 			colors: {
+				palette_1: "#D6BD98",
+				palette_2: "#677D6A",
+				palette_3: "#1A3636",
 				light_first: "#FFFFFF",
 				light_second: "#E8E8E8",
 				light_third: "#6A6A6A",

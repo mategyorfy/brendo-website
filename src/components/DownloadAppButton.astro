@@ -1,0 +1,15 @@
+---
+import { Icon } from "astro-icon/components";
+
+const { title, subtitle, icon } = Astro.props;
+---
+
+<div class="flex flex-row items-center border-[1.5px] border-[#A6A6A6] space-x-2 justify-center bg-black py-1 px-3 rounded-md">
+  <div class="flex">
+    <Icon name={icon} class="text-white text-xl top-0" size={38} />
+  </div>
+  <div class="flex flex-col justify-center items-start text-white whitespace-nowrap">
+    <span class="font-inter font-regular tracking-wide">{title}</span>
+    <span class="font-inter font-semibold text-lg tracking-wider">{subtitle}</span>
+  </div>
+</div>
