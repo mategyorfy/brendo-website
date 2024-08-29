@@ -2,11 +2,14 @@
 import { Image } from "astro:assets";
 import logo from "../assets/site_logo.svg";
 
-const aspectRatio = logo.width / logo.height;
+import { getLangFromUrl, useTranslations } from "../i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 ---
 
 <header class="top-0 bg-none flex padding-x justify-center items-center w-full h-16 absolute">
-  <div class="max-container bg-none w-full relative flex flex-row items-center flex-nowrap h-full border-0 border-blue-700">
+  <div class="justify-between max-container bg-none w-full relative flex flex-row items-center flex-nowrap h-full border-0 border-blue-700">
     <div class="h-full flex w-[30%] flex-row items-center justify-start border-0 border-yellow-800">
       <Image
         class="w-min h-[50%] flex object-cover border-0 border-violet-800"
@@ -18,11 +21,16 @@ const aspectRatio = logo.width / logo.height;
       <h1 class="text-lg font-inter font-bold tracking-wide text-black">Brendo</h1>
     </div>
 
-    <ul class="flex-1 max-sm:hidden sm:flex lg:max-w-[50%] text-black space-x-4 w-full justify-between border-0 border-red-700">
-      <li class="font-inter font-medium">Home</li>
-      <li class="font-inter font-medium">Explore</li>
-      <li class="font-inter font-medium">Download app</li>
-      <li class="font-inter font-medium">Contact us</li>
+    <ul class="mx-6 flex-1 max-md:hidden md:flex lg:max-w-[50%] text-black gap-4 w-full justify-evenly border-0 border-red-700">
+      <a href="#" class="font-inter font-medium">{t("nav.home")}</a>
+      <a href="#features" class="font-inter font-medium">{t("nav.explore")}</a>
+      <a href="#downloadapp" class="font-inter font-medium">{t("nav.download")}</a>
+      <a href="#footer" class="font-inter font-medium">{t("nav.contactus")}</a>
     </ul>
+    <div class="flex flex-row text-black justify-center items-center border-0 border-red-800">
+      <a href="/en">English</a>
+      <span class="h-6 w-[1px] mx-3 bg-black"></span>
+      <a href="/hu">Magyar</a>
+    </div>
   </div>
 </header>

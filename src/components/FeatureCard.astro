@@ -1,5 +1,4 @@
 ---
-import { Image } from "astro:assets";
 import { Icon } from "astro-icon/components";
 
 const { title, desc, icon } = Astro.props;
@@ -10,7 +9,7 @@ const { title, desc, icon } = Astro.props;
 >
   <Icon name={icon} class="text-black text-xl top-0" size={40} />
   <div class="space-y-3 border-0 aspect-[4/2] border-violet-800">
-    <h1 class="font-inter font-bold text-[18px] tracking-wide">{title}</h1>
+    <h1 class="font-inter font-semibold text-[18px] tracking-wide">{title}</h1>
     <p class="font-inter object-contain font-regular lg:text-[16px] text-[14px] tracking-wider">{desc}</p>
   </div>
 </div>

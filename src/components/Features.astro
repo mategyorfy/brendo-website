@@ -1,19 +1,16 @@
 ---
 import FeatureCard from "./FeatureCard.astro";
 
-const explore_text = "Explore our continuously growing collection of program ideas contributed by our community members. There are ideas for everyone!";
-const groups_text = "Make planning easier by creating groups with your partner or friends to keep a shared list of the activities you want go to together.";
-const memories_text = "Have a beautiful list of all the activities you’ve been to with your loved one. Create albums and remember your best times together! ";
-const upload_text =
-  "You’ve got a program idea that most of us don’t know about? Share your idea with our members to help them enjoy a fantastic time together!";
-const tourist_text =
-  "You can turn in Tourist mode to display all the ideas in English instead of the native language making it easier for you to explore abroad";
+import { getLangFromUrl, useTranslations } from "../i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 ---
 
-<div class="flex flex-1 mt-20 lg:mt-32 flex-wrap gap-6 justify-center items-start w-full border-0 border-red-800">
-  <FeatureCard title="Explore" desc={explore_text} icon="explore-icon" />
-  <FeatureCard title="Connect" desc={groups_text} icon="group-icon" />
-  <FeatureCard title="Make memories" desc={memories_text} icon="polaroids-icon" />
-  <FeatureCard title="Share your ideas" desc={upload_text} icon="clipboard-icon" />
-  <FeatureCard title="Make it easy for tourist" desc={tourist_text} icon="language-icon" />
-</div>
+<section id="features" class="flex flex-1 mt-20 lg:mt-20 flex-wrap gap-6 justify-center py-20 items-start w-full border-0 border-red-800">
+  <FeatureCard title={t("features.title.explore")} desc={t("features.desc.explore")} icon="explore-icon" />
+  <FeatureCard title={t("features.title.connect")} desc={t("features.desc.connect")} icon="group-icon" />
+  <FeatureCard title={t("features.title.memories")} desc={t("features.desc.memories")} icon="polaroids-icon" />
+  <FeatureCard title={t("features.title.shareidea")} desc={t("features.desc.shareidea")} icon="clipboard-icon" />
+  <FeatureCard title={t("features.title.tourist")} desc={t("features.desc.tourist")} icon="language-icon" />
+</section>

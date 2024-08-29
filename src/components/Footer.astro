@@ -1,10 +1,14 @@
 ---
-import { Icon } from "astro-icon/components";
 import { Image } from "astro:assets";
 import logo from "../assets/full_small_logo_white.png";
+
+import { getLangFromUrl, useTranslations } from "../i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 ---
 
-<div class="bg-palette_3 pt-10 pb-10 mt-32">
+<footer id="footer" class="bg-palette_3 pt-10 pb-16 mt-20">
   <div class="flex flex-col max-container max-md:items-center md:flex-row gap-12 padding-x w-full">
     <!-- <Icon name={"full_small_logo_white"} class="text-black border-2 border-white" size={100} /> -->
     <Image
@@ -16,17 +20,20 @@ import logo from "../assets/full_small_logo_white.png";
     />
     <div class="flex md:flex-row flex-col gap-10">
       <div class="border-violet-800 border-0 flex flex-col gap-4 pt-2 text-white font-inter text-lg font-light">
-        <span class="font-semibold">Navigation</span>
-        <span>Home</span>
-        <span>Explore</span>
-        <span>Contact us</span>
-        <span>Download app</span>
+        <span class="font-semibold">{t("footer.navigation")}</span>
+        <a href="#">{t("nav.home")}</a>
+        <a href="#features">{t("nav.explore")}</a>
+        <a href="#downloadapp">{t("nav.download")}</a>
       </div>
       <div class="border-pink-800 border-0 flex flex-col gap-4 pt-2 text-white font-inter text-lg font-light">
-        <span class="font-semibold">Documents</span>
-        <span>Pricacy Policy</span>
-        <span>Terms & Conditons</span>
+        <span class="font-semibold">{t("footer.documents")}</span>
+        <span>{t("document.privacypolicy")}</span>
+        <span>{t("document.tac")}</span>
+      </div>
+      <div class="border-pink-800 border-0 flex flex-col gap-4 pt-2 text-white font-inter text-lg font-light">
+        <span class="font-semibold">{t("nav.contactus")}</span>
+        <span class="select-text">brendoapp@gmail.com</span>
       </div>
     </div>
   </div>
-</div>
+</footer>

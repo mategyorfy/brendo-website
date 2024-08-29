@@ -2,20 +2,27 @@
 import { Image } from "astro:assets";
 import logo from "../assets/app_explore_memories.png";
 import { Icon } from "astro-icon/components";
+
+import { getLangFromUrl, useTranslations } from "../i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 ---
 
-<div class="flex flex-1 max-lg:pt-6 pt-4 lg:flex-row flex-col flex-wrap w-full justify-evenly border-0 border-red-800">
+<section id="hero" class="flex flex-1 max-lg:pt-6 pt-4 lg:flex-row flex-col flex-wrap w-full justify-evenly border-0 border-red-800">
   <div class="flex flex-1 flex-col sm:max-w-[80%] space-y-6 sm:space-y-12 min-h-full items-start justify-center bg-none text-center">
-    <h1 class="font-inter text-3xl lg:text-5xl font-extrabold lg:leading-[60px] text-start">Discover Fun Activities Waiting For You</h1>
+    <h1 class="font-inter text-3xl lg:text-5xl font-extrabold lg:leading-[60px] text-start">{t("hero.title")}</h1>
 
-    <p class="text-start font-inter font-regular text-[1.125] tracking-wide">
-      Let <span class="font-bold">Brendo</span> help you find program ideas <br /> and spend quality offline time with your <br /> companions
+    <p class="lg:max-w-[70%] text-start font-inter font-regular text-[1.125] tracking-wide">
+      {t("hero.subtitle_1")}
+      <span class="font-bold">{t("appname")}</span>
+      {t("hero.subtitle_2")}
     </p>
 
-    <div class="flex flex-row space-x-2 rounded-lg bg-black justify-center items-center py-3 px-6 lg:py-4 lg:px-8">
-      <span class="text-white text-start font-inter text-md lg:text-lg font-regular">Get the app</span>
+    <a href="#downloadapp" class="flex flex-row space-x-2 rounded-lg bg-black justify-center items-center py-3 px-6 lg:py-4 lg:px-8">
+      <span class="text-white text-start font-inter text-md lg:text-lg font-regular">{t("hero.button")}</span>
       <Icon name="arrow-right" class="text-white lg:text-xl text-lg" />
-    </div>
+    </a>
   </div>
   <div class="flex flex-1 max-lg:mt-8 items-center justify-center w-full h-full bg-none">
     <Image
@@ -26,4 +33,4 @@ import { Icon } from "astro-icon/components";
       alt="A description of my image."
     />
   </div>
-</div>
+</section>

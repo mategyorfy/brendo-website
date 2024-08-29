@@ -8,6 +8,7 @@
     "build": "astro check && astro build",
     "preview": "astro preview",
     "astro": "astro",
+    "check": "astro check",
     "build-css": "tailwindcss build -i src/styles/global.css -o public/styles.css"
   },
   "dependencies": {
