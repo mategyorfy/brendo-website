@@ -12,17 +12,18 @@ const t = useTranslations(lang);
   <div class="justify-between max-container bg-none w-full relative flex flex-row items-center flex-nowrap h-full border-0 border-blue-700">
     <div class="h-full flex w-[30%] flex-row items-center justify-start border-0 border-yellow-800">
       <Image
+        loading={"eager"}
         class="w-min h-[50%] flex object-cover border-0 border-violet-800"
         src={logo}
         widths={[logo.width]}
         sizes={`(max-width: 360px) 240px, (max-width: 720px) 540px, (max-width: 1600px) 720px, ${logo.width}px`}
-        alt="A description of my image."
+        alt="Brendo colorful logo"
       />
       <h1 class="text-lg font-inter font-bold tracking-wide text-black">Brendo</h1>
     </div>
 
     <ul class="mx-6 flex-1 max-md:hidden md:flex lg:max-w-[50%] text-black gap-4 w-full justify-evenly border-0 border-red-700">
-      <a href="#" class="font-inter font-medium">{t("nav.home")}</a>
+      <a href="#top" class="font-inter font-medium">{t("nav.home")}</a>
       <a href="#features" class="font-inter font-medium">{t("nav.explore")}</a>
       <a href="#downloadapp" class="font-inter font-medium">{t("nav.download")}</a>
       <a href="#footer" class="font-inter font-medium">{t("nav.contactus")}</a>

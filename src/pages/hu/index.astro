@@ -10,11 +10,12 @@ import Footer from "../../components/Footer.astro";
 import { Image } from "astro:assets";
 
 import left_blob from "../../assets/background_blob_left.svg";
-import right_blob from "../../assets/background_blob_right.png";
+import right_blob from "../../assets/background_blob_right.svg";
 ---
 
 <Layout title="Brendo">
   <Image
+    loading={"eager"}
     class=`z-[-1] absolute max-w-[50%] top-0 right-0  object-cover m-0 p-0 border-0 border-violet-800`
     src={right_blob}
     widths={[right_blob.width]}
@@ -38,6 +39,7 @@ import right_blob from "../../assets/background_blob_right.png";
   />
 
   <Image
+    loading={"eager"}
     class="overflow-hidden z-[-1] absolute max-w-[50%] flex bottom-0 left-0 object-cover border-0 border-violet-800"
     src={left_blob}
     widths={[left_blob.width]}

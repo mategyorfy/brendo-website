@@ -10,16 +10,17 @@ import Footer from "../../components/Footer.astro";
 import { Image } from "astro:assets";
 
 import left_blob from "../../assets/background_blob_left.svg";
-import right_blob from "../../assets/background_blob_right.png";
+import right_blob from "../../assets/background_blob_right.svg";
 ---
 
 <Layout title="Brendo">
   <Image
+    loading={"eager"}
     class=`z-[-1] absolute max-w-[50%] top-0 right-0  object-cover m-0 p-0 border-0 border-violet-800`
     src={right_blob}
     widths={[right_blob.width]}
     sizes={`(max-width: 360px) 240px, (max-width: 720px) 540px, (max-width: 1600px) 720px, ${right_blob.width}px`}
-    alt="A description of my image."
+    alt="Background shape 1"
   />
 
   <Image
@@ -27,22 +28,23 @@ import right_blob from "../../assets/background_blob_right.png";
     src={left_blob}
     widths={[left_blob.width]}
     sizes={`(max-width: 360px) 240px, (max-width: 720px) 540px, (max-width: 1600px) 720px, ${left_blob.width}px`}
-    alt="A description of my image."
+    alt="Background shape 2"
   />
   <Image
     class=`z-[-1] absolute max-w-[50%]  right-0 md:hidden top-[50%]  object-cover m-0 p-0 border-0 border-violet-800`
     src={right_blob}
     widths={[right_blob.width]}
     sizes={`(max-width: 360px) 240px, (max-width: 720px) 540px, (max-width: 1600px) 720px, ${right_blob.width}px`}
-    alt="A description of my image."
+    alt="Background shape 3"
   />
 
   <Image
+    loading={"eager"}
     class="overflow-hidden z-[-1] absolute max-w-[50%] flex bottom-0 left-0 object-cover border-0 border-violet-800"
     src={left_blob}
     widths={[left_blob.width]}
     sizes={`(max-width: 360px) 240px, (max-width: 720px) 540px, (max-width: 1600px) 720px, ${left_blob.width}px`}
-    alt="A description of my image."
+    alt="Background shape 4"
   />
   <Header />
   <main class="flex flex-col max-container padding-x min-h-full border-0 pt-16 border-violet-700 w-full bg-transparent">

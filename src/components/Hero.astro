@@ -26,11 +26,12 @@ const t = useTranslations(lang);
   </div>
   <div class="flex flex-1 max-lg:mt-8 items-center border-0 border-red-800 justify-center w-full bg-none">
     <Image
+      loading={"eager"}
       class="max-w-[80%]"
       src={logo}
       widths={[logo.width]}
       sizes={`(max-width: 360px) 240px, (max-width: 720px) 540px, (max-width: 1600px) 720px, ${logo.width}px`}
-      alt="A description of my image."
+      alt="Pages of the app"
     />
   </div>
 </section>
