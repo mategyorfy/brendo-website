@@ -24,9 +24,9 @@ const t = useTranslations(lang);
       <Icon name="arrow-right" class="text-white lg:text-xl text-lg" />
     </a>
   </div>
-  <div class="flex flex-1 max-lg:mt-8 items-center justify-center w-full h-full bg-none">
+  <div class="flex flex-1 max-lg:mt-8 items-center border-2 border-red-800 justify-center w-full bg-none">
     <Image
-      class="w-min max-w-[80%] flex object-cover border-0 border-violet-800"
+      class="max-w-[80%]"
       src={logo}
       widths={[logo.width]}
       sizes={`(max-width: 360px) 240px, (max-width: 720px) 540px, (max-width: 1600px) 720px, ${logo.width}px`}
