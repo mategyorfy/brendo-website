@@ -35,7 +35,7 @@ export const ui = {
     "features.desc.tourist":
       "You can turn in Tourist mode to display all the ideas in English instead of the native language making it easier for you to explore abroad",
 
-    "download.title": "Download Brendo",
+    "download.title": "Download",
     "donwload.subtitle": "Brendo is available for free on both iOS and Android. You can find them their corresponding app stores or use the button below",
 
     "footer.navigation": "Navigation",
@@ -68,13 +68,13 @@ export const ui = {
     "features.desc.connect":
       "Tedd könnyebbé a szervezést csoportok létrehozásával. Hozzatok létre egy közös listát azokkal a program ötletekkel, amelyeken szívesen részt vennétek közösen!",
     "features.desc.memories":
-      "Szeretnél egy gyűjteményt azokról a programokról, ahol a pároddal vagy barátaiddal voltál? Hozz létre emlékeket és add hozzá a közös albumhoz, hogy emlékezz a legjobb közös élményekre!",
+      "Szeretnél egy gyűjteményt azokról a programokról, amikre a pároddal vagy barátaiddal elmentél? Hozz létre emlékeket és add hozzá a közös albumhoz, hogy elékezz a legjobb közös élményekre!",
     "features.desc.shareidea":
       "Van egy jó program ötleted, amit a sokan nem ismernek? Oszd meg azt a többi felhasználóval, hogy segíts nekik kellemes emlékeket gyűjteni!",
     "features.desc.tourist":
       "A Turista mód segítségével külföldön is könnyű lesz felfedezni, hiszen a programokat lefordítjuk neked angolra, így nem kell beszélned helyi nyelvet.",
 
-    "download.title": "Brendo letöltés",
+    "download.title": "Letöltés",
     "donwload.subtitle":
       "Brendo alkalmazás ingyenesen elérhető iPhone és Android készülékekre egyaránt. Letöltheted az App Store, illetve a Google Play áruházakból!",
 
