@@ -3,6 +3,7 @@ import DownloadAppButton from "./DownloadAppButton.astro";
 import { Image } from "astro:assets";
 
 import app_ios_android from "../assets/app_ios_android.png";
+import app_gif from "../assets/brendo_screen_record.gif";
 
 import { getLangFromUrl, useTranslations } from "../i18n/utils";
 
@@ -13,7 +14,7 @@ const t = useTranslations(lang);
 <section id="downloadapp" class="border-0 flex border-red-800 pt-24 lg:py-16">
   <div class="flex flex-col lg:flex-row border-0 justify-evenly border-blue-800 items-center">
     <div class="flex flex-col lg:max-w-[40%] space-y-6">
-      <h1 class="whitespace-nowrap font-inter font-medium text-3xl">{t("download.title")} <span class="font-extrabold">{t("appname")}</span></h1>
+      <h1 class="whitespace-nowrap font-inter font-medium text-3xl">{t("download.title")}</h1>
       <p class="font-inter font-regular text-lg">
         {t("donwload.subtitle")}
       </p>
@@ -22,6 +23,13 @@ const t = useTranslations(lang);
         <DownloadAppButton title="Get it on" subtitle="Google Play" icon="playstore_logo" />
       </div>
     </div>
+    <!--     <Image
+      class="max-lg:max-w-[80%] lg:max-w-[20%] max-lg:pt-8 border-0 border-violet-800"
+      src={app_gif}
+      widths={[app_gif.width]}
+      sizes={`(max-width: 360px) 240px, (max-width: 720px) 540px, (max-width: 1600px) 720px, ${app_gif.width}px`}
+      alt="App on iOS and Android."
+    /> -->
     <Image
       class="max-lg:max-w-[80%] lg:max-w-[30%] max-lg:pt-8 border-0 border-violet-800"
       src={app_ios_android}
