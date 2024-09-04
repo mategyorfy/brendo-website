@@ -2,15 +2,30 @@
 import FeatureCard from "./FeatureCard.astro";
 
 import { getLangFromUrl, useTranslations } from "../i18n/utils";
+import app_gif from "../assets/screen_gif.gif";
+import iphone from "../assets/iphone_frame.png";
+import { Image } from "astro:assets";
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 ---
 
-<section id="features" class="flex flex-1 mt-0 lg:mt-20 flex-wrap gap-6 justify-center pt-20 items-start w-full border-0 border-red-800">
-  <FeatureCard title={t("features.title.explore")} desc={t("features.desc.explore")} icon="explore-icon" />
-  <FeatureCard title={t("features.title.connect")} desc={t("features.desc.connect")} icon="group-icon" />
-  <FeatureCard title={t("features.title.memories")} desc={t("features.desc.memories")} icon="polaroids-icon" />
-  <FeatureCard title={t("features.title.shareidea")} desc={t("features.desc.shareidea")} icon="clipboard-icon" />
-  <FeatureCard title={t("features.title.tourist")} desc={t("features.desc.tourist")} icon="language-icon" />
+<section id="features" class="flex mt-0 lg:mt-12 flex-col-reverse md:flex-row justify-between pt-12 items-stretch w-full border-0 border-red-800">
+  <div class="flex-1 relative w-full min-h-full border-0 border-green-800">
+    <Image
+      loading={"eager"}
+      class="md:absolute m-auto left-0 right-0 top-0 max-lg:max-w-[80%] lg:max-w-[40%] max-lg:pt-8 border-0 border-violet-800"
+      src={app_gif}
+      widths={[app_gif.width]}
+      sizes={`(max-width: 360px) 240px, (max-width: 720px) 540px, (max-width: 1600px) 720px, ${app_gif.width}px`}
+      alt="App on iOS and Android."
+    />
+  </div>
+  <div class="grid grid-cols-2 lg:max-w-[50%] w-full gap-6 border-red-800 border-0">
+    <FeatureCard title={t("features.title.explore")} desc={t("features.desc.explore")} icon="explore-icon" />
+    <FeatureCard title={t("features.title.connect")} desc={t("features.desc.connect")} icon="group-icon" />
+    <FeatureCard title={t("features.title.memories")} desc={t("features.desc.memories")} icon="polaroids-icon" />
+    <FeatureCard title={t("features.title.shareidea")} desc={t("features.desc.shareidea")} icon="clipboard-icon" />
+  </div>
+  <!--   <FeatureCard title={t("features.title.tourist")} desc={t("features.desc.tourist")} icon="language-icon" /> -->
 </section>
