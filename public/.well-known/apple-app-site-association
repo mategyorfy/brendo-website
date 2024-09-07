@@ -1,0 +1,22 @@
+{
+  // This section enables Universal Links
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        // Example: "QQ57RJ5UTD.com.acme.myapp"
+        "appID": "487UG8ZF83.app.brendo.explore",
+        // All paths that should support redirecting
+        "paths": ["en/login/*", "hu/login/*", "/login/*"]
+      }
+    ]
+  },
+  // This section enables Apple Handoff
+  "activitycontinuation": {
+    "apps": ["487UG8ZF83.app.brendo.explore"]
+  },
+  // This section enable Shared Web Credentials
+  "webcredentials": {
+    "apps": ["487UG8ZF83.app.brendo.explore"]
+  }
+}
