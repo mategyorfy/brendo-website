@@ -4,7 +4,7 @@
     "details": [
       {
         "appID": "487UG8ZF83.app.brendo.explore",
-        "paths": ["/en/login/*", "/hu/login/*", "/login/*"]
+        "paths": ["/login/*"]
       }
     ]
   },
