@@ -2,7 +2,8 @@
 import FeatureCard from "./FeatureCard.astro";
 
 import { getLangFromUrl, useTranslations } from "../i18n/utils";
-import app_gif from "../assets/screen_gif.gif";
+import app_program_page from "../assets/app_program_page.png";
+//import app_gif from "../assets/screen_gif.gif";
 import iphone from "../assets/iphone_frame.png";
 import { Image } from "astro:assets";
 
@@ -15,9 +16,9 @@ const t = useTranslations(lang);
     <Image
       loading={"eager"}
       class="md:absolute m-auto left-0 right-0 top-0 max-lg:max-w-[80%] lg:max-w-[40%] max-lg:pt-8 border-0 border-violet-800"
-      src={app_gif}
-      widths={[app_gif.width]}
-      sizes={`(max-width: 360px) 240px, (max-width: 720px) 540px, (max-width: 1600px) 720px, ${app_gif.width}px`}
+      src={app_program_page}
+      widths={[app_program_page.width]}
+      sizes={`(max-width: 360px) 240px, (max-width: 720px) 540px, (max-width: 1600px) 720px, ${app_program_page.width}px`}
       alt="App on iOS and Android."
     />
   </div>
