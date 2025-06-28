@@ -5,7 +5,7 @@ import icon from "astro-icon";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://mategyorfy.github.io",
-  base: "brendo-website",
+  site: "https://brendo.app",
+  base: "/",
   integrations: [tailwind(), icon()],
 });
