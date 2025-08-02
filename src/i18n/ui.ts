@@ -56,8 +56,8 @@ export const ui = {
     "nav.contactus": "Kapcsolat",
 
     "hero.title": "Fedezd fel Magyarországot és a körülötted rejlő programokat!",
-    "hero.subtitle_1": "Használd a ",
-    "hero.subtitle_2": "mobil alkalmazást hogy új, izgalmas szabadidős programokat találj és minőségi időt tölthess társaiddal akár helyi, akár turista vagy",
+    "hero.subtitle_1": "Próbáld ki a ",
+    "hero.subtitle_2": "alkalmazást hogy új, izgalmas szabadidős programokat találj és minőségi időt tölthess társaiddal akár helyi, akár turista vagy",
     "hero.button": "Letöltés",
 
     "features.title.explore": "Fedezz fel ötleteket!",
