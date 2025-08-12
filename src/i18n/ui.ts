@@ -46,6 +46,10 @@ export const ui = {
 
     "document.privacypolicy": "Privacy Policy",
     "document.tac": "Terms & Conditions",
+
+    "contactus.name": "Name",
+    "contactus.email": "Email",
+    "contactus.subtitle": "If you have any problems or just something to ask, feel free to contact us!"
   },
   hu: {
     appname: "Brendo",
@@ -89,5 +93,9 @@ export const ui = {
 
     "document.privacypolicy": "Adatvédelmi nyilatkozat",
     "document.tac": "ÁSZF",
+
+    "contactus.name": "Név",
+    "contactus.email": "Email",
+    "contactus.subtitle": "Ha esetleg problémába ütközött vagy csak kérdése van hozzánk, keressen bizalommal!"
   },
 } as const;
