@@ -1,58 +1,325 @@
 ---
 import Layout from '../../layouts/Layout.astro'
-import Header from '../../components/Header.astro'
-import Hero from '../../components/Hero.astro'
-import Features from '../../components/Features.astro'
-import DownloadApp from '../../components/DownloadApp.astro'
-import ContactUs from '../../components/ContactUs.astro'
-import Footer from '../../components/Footer.astro'
-
 import { Image } from 'astro:assets'
-
-import left_blob from '../../assets/background_blob_left.svg'
-import right_blob from '../../assets/background_blob_right.svg'
+import appScreenshot from '../../assets/app_explore_memories.png'
+import whiteLogo from '../../assets/full_small_logo_white.png'
 ---
 
-<Layout title='Brendo'>
-	<Image
-		loading={'eager'}
-		class=`z-[-1] absolute max-w-[50%] top-0 right-0  object-cover m-0 p-0 border-0 border-violet-800`
-		src={right_blob}
-		widths={[right_blob.width]}
-		sizes={`(max-width: 360px) 240px, (max-width: 720px) 540px, (max-width: 1600px) 720px, ${right_blob.width}px`}
-		alt='A description of my image.'
-	/>
+<Layout title='Brendo – Mit csinálj ma?'>
+  <div class="min-h-screen text-white overflow-x-hidden" style="background-color: #0c0c0f; font-family: 'DM Sans', sans-serif;">
 
-	<Image
-		class='overflow-hidden z-[-1] absolute max-w-[50%] md:hidden top-[20%] flex left-0 object-cover border-0 border-violet-800'
-		src={left_blob}
-		widths={[left_blob.width]}
-		sizes={`(max-width: 360px) 240px, (max-width: 720px) 540px, (max-width: 1600px) 720px, ${left_blob.width}px`}
-		alt='A description of my image.'
-	/>
-	<Image
-		class=`z-[-1] absolute max-w-[50%]  right-0 md:hidden top-[50%]  object-cover m-0 p-0 border-0 border-violet-800`
-		src={right_blob}
-		widths={[right_blob.width]}
-		sizes={`(max-width: 360px) 240px, (max-width: 720px) 540px, (max-width: 1600px) 720px, ${right_blob.width}px`}
-		alt='A description of my image.'
-	/>
+    <!-- Navigation -->
+    <nav style="position: fixed; top: 0; left: 0; right: 0; z-index: 50; background: rgba(12,12,15,0.85); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(255,255,255,0.06);">
+      <div style="max-width: 1280px; margin: 0 auto; padding: 0 1.5rem; height: 5rem; display: flex; align-items: center; justify-content: space-between;">
+        <div style="display: flex; align-items: center; gap: 0.625rem;">
+          <img src="/site_logo.svg" alt="Brendo" style="width: 2.25rem; height: 2.25rem; object-fit: contain;" />
+          <span style="font-family: 'Crimson Pro', serif; font-size: 1.5rem; font-weight: 700; letter-spacing: -0.02em; color: white;">Brendo</span>
+        </div>
+        <div class="hidden md:flex" style="align-items: center; gap: 2rem;">
+          <a href="#felfedezes" style="font-size: 0.875rem; font-weight: 500; color: rgba(255,255,255,0.65); text-decoration: none; transition: color 0.2s;" onmouseover="this.style.color='white'" onmouseout="this.style.color='rgba(255,255,255,0.65)'">Felfedezés</a>
+          <a href="#emlekeim" style="font-size: 0.875rem; font-weight: 500; color: rgba(255,255,255,0.65); text-decoration: none; transition: color 0.2s;" onmouseover="this.style.color='white'" onmouseout="this.style.color='rgba(255,255,255,0.65)'">Emlékeim</a>
+          <a href="#megosztas" style="font-size: 0.875rem; font-weight: 500; color: rgba(255,255,255,0.65); text-decoration: none; transition: color 0.2s;" onmouseover="this.style.color='white'" onmouseout="this.style.color='rgba(255,255,255,0.65)'">Megosztás</a>
+        </div>
+        <a href="#megosztas" style="border-radius: 9999px; padding: 0.625rem 1.5rem; background: #5ebd8a; color: black; font-weight: 600; font-size: 0.875rem; text-decoration: none; transition: background 0.2s;" onmouseover="this.style.background='#4fa877'" onmouseout="this.style.background='#5ebd8a'">
+          Töltsd le ingyen
+        </a>
+      </div>
+    </nav>
 
-	<Image
-		loading={'eager'}
-		class='overflow-hidden z-[-1] absolute max-w-[50%] flex bottom-0 left-0 object-cover border-0 border-violet-800'
-		src={left_blob}
-		widths={[left_blob.width]}
-		sizes={`(max-width: 360px) 240px, (max-width: 720px) 540px, (max-width: 1600px) 720px, ${left_blob.width}px`}
-		alt='A description of my image.'
-	/>
-	<main class="flex flex-col">
-		<Header />
-		<div class='flex flex-col max-container padding-x min-h-full border-0 pt-16 border-violet-700 w-full bg-transparent'>
-			<Hero />
-			<Features />
-			<DownloadApp />
-		</div>
-		<Footer />
-	</main>
+    <!-- Hero Section -->
+    <section style="position: relative; padding-top: 10rem; padding-bottom: 5rem; overflow: hidden;">
+      <!-- Ambient glow -->
+      <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 800px; height: 800px; background: rgba(94,189,138,0.07); filter: blur(120px); border-radius: 9999px; pointer-events: none;"></div>
+
+      <div style="max-width: 1280px; margin: 0 auto; padding: 0 1.5rem; position: relative; z-index: 10;">
+        <div class="flex flex-col lg:flex-row items-center" style="gap: 4rem;">
+
+          <!-- Left: text -->
+          <div class="flex-1 text-center lg:text-left">
+            <div class="hero-badge" style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.5rem 1rem; border-radius: 9999px; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); margin-bottom: 2rem; backdrop-filter: blur(4px);">
+              <span class="pulse-dot" style="width: 0.5rem; height: 0.5rem; border-radius: 9999px; background: #5ebd8a; display: inline-block;"></span>
+              <span style="font-size: 0.875rem; font-weight: 500; color: rgba(255,255,255,0.75);">Magyarország új élménykereső</span>
+            </div>
+
+            <h1 class="hero-title" style="font-family: 'Crimson Pro', serif; font-size: clamp(3rem, 8vw, 5.5rem); font-weight: 700; line-height: 1.1; margin-bottom: 1.5rem; color: white;">
+              Mit csinálj <span style="color: #5ebd8a; font-style: italic;">ma?</span>
+            </h1>
+
+            <p class="hero-subtitle" style="font-size: 1.125rem; color: rgba(255,255,255,0.55); margin-bottom: 2.5rem; max-width: 38rem; font-weight: 300; line-height: 1.75; margin-left: auto; margin-right: auto;">
+              Fedezd fel a környéked legújabb helyeit, programjait és eseményeit. Gyűjtsd a pillanatokat, és oszd meg azokat, akikkel a legfontosabb.
+            </p>
+
+            <div class="hero-buttons flex flex-col sm:flex-row items-center justify-center lg:justify-start" style="gap: 1rem;">
+              <a href="#megosztas" style="display: flex; align-items: center; justify-content: center; width: 100%; max-width: 16rem; height: 3.5rem; padding: 0 2rem; border-radius: 9999px; background: #5ebd8a; color: black; font-size: 1.0625rem; font-weight: 600; text-decoration: none; box-shadow: 0 0 20px rgba(94,189,138,0.25); border: 1px solid rgba(94,189,138,0.5); transition: background 0.2s;" onmouseover="this.style.background='#4fa877'" onmouseout="this.style.background='#5ebd8a'">
+                Töltsd le ingyen
+              </a>
+              <a href="#felfedezes" style="display: flex; align-items: center; justify-content: center; width: 100%; max-width: 16rem; height: 3.5rem; padding: 0 2rem; border-radius: 9999px; border: 1px solid rgba(255,255,255,0.2); color: white; font-size: 1.0625rem; font-weight: 500; text-decoration: none; transition: background 0.2s;" onmouseover="this.style.background='rgba(255,255,255,0.05)'" onmouseout="this.style.background='transparent'">
+                Tudj meg többet
+              </a>
+            </div>
+          </div>
+
+          <!-- Right: app screenshot -->
+          <div class="flex-1 hero-image" style="display: flex; justify-content: center;">
+            <Image
+              src={appScreenshot}
+              alt="Brendo App"
+              loading="eager"
+              widths={[520, 800]}
+              sizes="(max-width: 768px) 90vw, 520px"
+              style="width: 100%; max-width: 520px; filter: drop-shadow(0 25px 50px rgba(0,0,0,0.6));"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Grid -->
+    <section id="felfedezes" style="padding: 6rem 0; background: rgba(255,255,255,0.02); border-top: 1px solid rgba(255,255,255,0.05); border-bottom: 1px solid rgba(255,255,255,0.05);">
+      <div style="max-width: 1280px; margin: 0 auto; padding: 0 1.5rem;">
+
+        <div class="animate-on-scroll text-center" style="max-width: 48rem; margin: 0 auto 5rem;">
+          <h2 style="font-family: 'Crimson Pro', serif; font-size: clamp(2rem, 5vw, 3rem); font-weight: 700; margin-bottom: 1.5rem; color: white;">Minden kaland egy helyen</h2>
+          <p style="font-size: 1.125rem; color: rgba(255,255,255,0.55); font-weight: 300;">
+            A Brendo nem csak egy app, hanem a személyes útmutatód a városhoz. Találj új helyeket, mentsd el a kedvenceidet, és őrizd meg az emlékeitet.
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-3" style="gap: 2rem;">
+          <!-- Feature 1: Felfedezés -->
+          <div class="animate-on-scroll feature-card" style="background: rgba(20,20,23,0.6); backdrop-filter: blur(8px); border: 1px solid rgba(255,255,255,0.06); padding: 2.5rem; border-radius: 1.5rem; transition: all 0.3s; transition-delay: 0s;">
+            <div style="width: 4rem; height: 4rem; border-radius: 1rem; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.06); display: flex; align-items: center; justify-content: center; margin-bottom: 2rem; transition: all 0.3s;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#5ebd8a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/></svg>
+            </div>
+            <h3 style="font-family: 'Crimson Pro', serif; font-size: 1.5rem; font-weight: 700; color: white; margin-bottom: 1rem;">Felfedezés</h3>
+            <p style="color: rgba(255,255,255,0.55); line-height: 1.7; font-weight: 300;">Böngéssz a helyi programok és helyek között, kategória és távolság alapján szűrve.</p>
+          </div>
+
+          <!-- Feature 2: Utazásaim -->
+          <div class="animate-on-scroll feature-card" style="background: rgba(20,20,23,0.6); backdrop-filter: blur(8px); border: 1px solid rgba(255,255,255,0.06); padding: 2.5rem; border-radius: 1.5rem; transition: all 0.3s; transition-delay: 0.1s;">
+            <div style="width: 4rem; height: 4rem; border-radius: 1rem; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.06); display: flex; align-items: center; justify-content: center; margin-bottom: 2rem; transition: all 0.3s;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#5ebd8a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="3 6 9 3 15 6 21 3 21 18 15 21 9 18 3 21"/><line x1="9" x2="9" y1="3" y2="18"/><line x1="15" x2="15" y1="6" y2="21"/></svg>
+            </div>
+            <h3 style="font-family: 'Crimson Pro', serif; font-size: 1.5rem; font-weight: 700; color: white; margin-bottom: 1rem;">Utazásaim</h3>
+            <p style="color: rgba(255,255,255,0.55); line-height: 1.7; font-weight: 300;">Kövesd nyomon, mely megyéket és városokat jártad már be, és tekintsd meg haladásodat egy interaktív térképen.</p>
+          </div>
+
+          <!-- Feature 3: Emlékeim -->
+          <div class="animate-on-scroll feature-card" style="background: rgba(20,20,23,0.6); backdrop-filter: blur(8px); border: 1px solid rgba(255,255,255,0.06); padding: 2.5rem; border-radius: 1.5rem; transition: all 0.3s; transition-delay: 0.2s;">
+            <div style="width: 4rem; height: 4rem; border-radius: 1rem; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.06); display: flex; align-items: center; justify-content: center; margin-bottom: 2rem; transition: all 0.3s;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#5ebd8a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"/><circle cx="12" cy="13" r="3"/></svg>
+            </div>
+            <h3 style="font-family: 'Crimson Pro', serif; font-size: 1.5rem; font-weight: 700; color: white; margin-bottom: 1rem;">Emlékeim</h3>
+            <p style="color: rgba(255,255,255,0.55); line-height: 1.7; font-weight: 300;">Készíts polaroid stílusú fotókat a meglátogatott helyekről, és építsd a saját naplódat.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Storytelling Section 1: Discover -->
+    <section style="padding: 6rem 0; position: relative; overflow: hidden;">
+      <div style="position: absolute; top: 50%; right: 0; width: 500px; height: 500px; background: rgba(94,189,138,0.04); filter: blur(100px); border-radius: 9999px; pointer-events: none; transform: translateY(-50%);"></div>
+
+      <div style="max-width: 1280px; margin: 0 auto; padding: 0 1.5rem; position: relative; z-index: 10;">
+        <div class="flex flex-col md:flex-row items-center" style="gap: 4rem;">
+
+          <!-- Left: text -->
+          <div class="flex-1 animate-on-scroll">
+            <div style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.25rem 0.75rem; border-radius: 9999px; background: rgba(94,189,138,0.1); color: #5ebd8a; font-size: 0.875rem; font-weight: 500; border: 1px solid rgba(94,189,138,0.2); margin-bottom: 1.5rem;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/></svg>
+              Útmutató
+            </div>
+            <h2 style="font-family: 'Crimson Pro', serif; font-size: clamp(2rem, 5vw, 3.5rem); font-weight: 700; margin-bottom: 2rem; color: white; line-height: 1.15;">
+              Fedezd fel a<br/><span style="color: #5ebd8a; font-style: italic;">környéked</span>
+            </h2>
+            <p style="font-size: 1.125rem; color: rgba(255,255,255,0.55); font-weight: 300; line-height: 1.75;">
+              Akár egy csendes kávézót keresel a délutáni olvasáshoz, akár egy pezsgő kulturális eseményt az esti kikapcsolódáshoz, a Brendo elvezet a legjobb helyekhez.
+            </p>
+          </div>
+
+          <!-- Right: city image placeholder -->
+          <div class="flex-1 animate-on-scroll" style="transition-delay: 0.2s; width: 100%;">
+            <div style="position: relative; border-radius: 2rem; overflow: hidden; aspect-ratio: 4/3; box-shadow: 0 25px 50px rgba(0,0,0,0.5); border: 1px solid rgba(255,255,255,0.08);">
+              <!-- City night gradient -->
+              <div style="position: absolute; inset: 0; background: linear-gradient(135deg, #1a2a3a 0%, #0d1b2a 40%, #1a1a2e 70%, #0c0c0f 100%);"></div>
+              <div style="position: absolute; inset: 0; background: radial-gradient(ellipse at 30% 60%, rgba(255,180,50,0.18) 0%, transparent 50%), radial-gradient(ellipse at 70% 35%, rgba(100,150,255,0.12) 0%, transparent 40%), radial-gradient(ellipse at 50% 80%, rgba(255,100,50,0.08) 0%, transparent 30%);"></div>
+              <div style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(0,0,0,0.88) 0%, rgba(0,0,0,0.15) 50%, transparent 100%);"></div>
+              <div style="position: absolute; bottom: 2rem; left: 2rem; right: 2rem;">
+                <div style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.375rem 0.75rem; border-radius: 9999px; background: rgba(0,0,0,0.55); backdrop-filter: blur(8px); border: 1px solid rgba(255,255,255,0.1); margin-bottom: 0.75rem;">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#5ebd8a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                  <span style="font-size: 0.75rem; font-weight: 500; color: white;">Budapest, Duna-part</span>
+                </div>
+                <h3 style="font-family: 'Crimson Pro', serif; font-size: 1.75rem; font-weight: 700; color: white; margin-bottom: 0.5rem;">Esti séta a város felett</h3>
+                <p style="color: rgba(255,255,255,0.65); font-size: 0.875rem;">Mentve a kedvencek közé</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Storytelling Section 2: Memories / Polaroid -->
+    <section id="emlekeim" style="padding: 6rem 0; background: rgba(255,255,255,0.02); border-top: 1px solid rgba(255,255,255,0.05); border-bottom: 1px solid rgba(255,255,255,0.05); position: relative; overflow: hidden;">
+      <div style="position: absolute; top: 50%; left: 0; width: 500px; height: 500px; background: rgba(94,189,138,0.04); filter: blur(100px); border-radius: 9999px; pointer-events: none; transform: translateY(-50%);"></div>
+
+      <div style="max-width: 1280px; margin: 0 auto; padding: 0 1.5rem; position: relative; z-index: 10;">
+        <div class="flex flex-col-reverse md:flex-row items-center" style="gap: 4rem;">
+
+          <!-- Left: Polaroids -->
+          <div class="flex-1 animate-on-scroll" style="position: relative; display: flex; justify-content: center; align-items: center; padding: 3rem 0; min-height: 28rem;">
+            <!-- Background polaroid -->
+            <div style="position: absolute; top: 1rem; right: 2rem; width: 58%; background: white; padding: 0.75rem 0.75rem 3rem; box-shadow: 0 20px 40px rgba(0,0,0,0.4); border-radius: 2px; transform: rotate(9deg); z-index: 0;">
+              <div style="aspect-ratio: 3/4; background: linear-gradient(160deg, #1e4d2b 0%, #2d6a40 35%, #1a3a25 65%, #0f2218 100%);"></div>
+            </div>
+            <!-- Foreground polaroid -->
+            <div class="polaroid-fg" style="position: relative; width: 68%; background: white; padding: 1rem 1rem 4rem; box-shadow: 0 25px 50px rgba(0,0,0,0.45); border-radius: 2px; z-index: 10; transform: rotate(-5deg);">
+              <div style="aspect-ratio: 1/1; background: linear-gradient(135deg, #c8a882 0%, #b8956a 30%, #9a7d5a 60%, #c4a070 100%); box-shadow: inset 0 2px 8px rgba(0,0,0,0.15);"></div>
+              <div style="position: absolute; bottom: 1.25rem; left: 0; right: 0; text-align: center; padding: 0 1rem;">
+                <p style="font-family: 'Crimson Pro', serif; color: rgba(0,0,0,0.88); font-weight: 700; font-size: 1.25rem; letter-spacing: -0.01em; margin-bottom: 0.25rem;">Különleges kávézó</p>
+                <p style="color: rgba(0,0,0,0.45); font-size: 0.7rem; font-family: monospace; letter-spacing: 0.15em;">2024. OKT. 12.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: text -->
+          <div class="flex-1 animate-on-scroll" style="transition-delay: 0.15s;">
+            <div style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.25rem 0.75rem; border-radius: 9999px; background: rgba(94,189,138,0.1); color: #5ebd8a; font-size: 0.875rem; font-weight: 500; border: 1px solid rgba(94,189,138,0.2); margin-bottom: 1.5rem;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"/><circle cx="12" cy="13" r="3"/></svg>
+              Napló
+            </div>
+            <h2 style="font-family: 'Crimson Pro', serif; font-size: clamp(2rem, 5vw, 3.5rem); font-weight: 700; margin-bottom: 2rem; color: white; line-height: 1.15;">
+              Minden kaland megérdemel egy <span style="color: #5ebd8a; font-style: italic;">emléket</span>
+            </h2>
+            <p style="font-size: 1.125rem; color: rgba(255,255,255,0.55); font-weight: 300; line-height: 1.75;">
+              Örökítsd meg a legszebb pillanatokat egyedi, polaroid stílusú digitális fotókkal. Hozz létre saját emlékkönyvet a bejárt helyekről, hogy bármikor visszanézhessed őket.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="megosztas" style="padding: 8rem 0; position: relative; overflow: hidden;">
+      <div style="position: absolute; inset: 0; background: rgba(94,189,138,0.025);"></div>
+      <div style="position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); width: 100%; max-width: 900px; height: 500px; background: rgba(94,189,138,0.14); filter: blur(140px); border-radius: 9999px 9999px 0 0; pointer-events: none;"></div>
+
+      <div style="max-width: 1280px; margin: 0 auto; padding: 0 1.5rem; position: relative; z-index: 10; text-align: center;">
+        <div class="animate-on-scroll" style="max-width: 48rem; margin: 0 auto; background: rgba(20,20,23,0.45); backdrop-filter: blur(20px); border: 1px solid rgba(255,255,255,0.09); padding: 4rem 2rem; border-radius: 3rem; box-shadow: 0 25px 60px rgba(0,0,0,0.4);">
+          <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="#5ebd8a" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="margin: 0 auto 2rem;"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/></svg>
+          <h2 style="font-family: 'Crimson Pro', serif; font-size: clamp(2.5rem, 7vw, 4.5rem); font-weight: 700; margin-bottom: 2rem; color: white; line-height: 1.1;">
+            Indulhat a <span style="color: #5ebd8a; font-style: italic;">kaland?</span>
+          </h2>
+          <p style="font-size: 1.125rem; color: rgba(255,255,255,0.55); margin-bottom: 3rem; font-weight: 300; line-height: 1.75; max-width: 30rem; margin-left: auto; margin-right: auto; margin-bottom: 3rem;">
+            Csatlakozz a Brendo közösséghez, és oszd meg a legjobb helyeket a barátaiddal. Töltsd le az alkalmazást még ma!
+          </p>
+          <div class="flex flex-col sm:flex-row items-center justify-center" style="gap: 1rem;">
+            <a href="#" style="display: flex; align-items: center; justify-content: center; width: 100%; max-width: 16rem; height: 4rem; padding: 0 2.5rem; border-radius: 9999px; background: #5ebd8a; color: black; font-size: 1.125rem; font-weight: 700; text-decoration: none; box-shadow: 0 0 30px rgba(94,189,138,0.3); transition: background 0.2s;" onmouseover="this.style.background='#4fa877'" onmouseout="this.style.background='#5ebd8a'">
+              Letöltés iOS-re
+            </a>
+            <a href="#" style="display: flex; align-items: center; justify-content: center; width: 100%; max-width: 16rem; height: 4rem; padding: 0 2.5rem; border-radius: 9999px; background: white; color: black; font-size: 1.125rem; font-weight: 700; text-decoration: none; transition: background 0.2s;" onmouseover="this.style.background='rgba(240,240,240,1)'" onmouseout="this.style.background='white'">
+              Letöltés Androidra
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer style="padding: 3rem 0; border-top: 1px solid rgba(255,255,255,0.06); background: rgba(0,0,0,0.45);">
+      <div style="max-width: 1280px; margin: 0 auto; padding: 0 1.5rem; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 1.5rem;">
+        <Image
+          src={whiteLogo}
+          alt="Brendo"
+          loading="lazy"
+          widths={[120]}
+          sizes="120px"
+          style="height: 1.75rem; width: auto; object-fit: contain;"
+        />
+        <div style="display: flex; gap: 1.5rem; font-size: 0.875rem; color: rgba(255,255,255,0.45);">
+          <a href="/docs/privacypolicy.pdf" style="color: rgba(255,255,255,0.45); text-decoration: none; transition: color 0.2s;" onmouseover="this.style.color='#5ebd8a'" onmouseout="this.style.color='rgba(255,255,255,0.45)'">Adatvédelem</a>
+          <a href="/docs/aszf.pdf" style="color: rgba(255,255,255,0.45); text-decoration: none; transition: color 0.2s;" onmouseover="this.style.color='#5ebd8a'" onmouseout="this.style.color='rgba(255,255,255,0.45)'">Felhasználási feltételek</a>
+          <a href="/hu/impresszum" style="color: rgba(255,255,255,0.45); text-decoration: none; transition: color 0.2s;" onmouseover="this.style.color='#5ebd8a'" onmouseout="this.style.color='rgba(255,255,255,0.45)'">Kapcsolat</a>
+        </div>
+        <p style="font-size: 0.875rem; color: rgba(255,255,255,0.3);">© {new Date().getFullYear()} Brendo. Minden jog fenntartva.</p>
+      </div>
+    </footer>
+
+  </div>
 </Layout>
+
+<style is:global>
+  body {
+    background-color: #0c0c0f;
+    margin: 0;
+  }
+</style>
+
+<style>
+  /* Pulse animation for the live dot */
+  @keyframes pulse {
+    0%, 100% { opacity: 1; box-shadow: 0 0 8px rgba(94,189,138,0.8); }
+    50% { opacity: 0.5; box-shadow: 0 0 3px rgba(94,189,138,0.3); }
+  }
+  .pulse-dot {
+    animation: pulse 2s ease-in-out infinite;
+  }
+
+  /* Hero entrance animations */
+  @keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(28px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes fadeInRight {
+    from { opacity: 0; transform: translateX(40px); }
+    to   { opacity: 1; transform: translateX(0); }
+  }
+
+  .hero-badge   { animation: fadeInUp 0.6s ease-out 0.0s both; }
+  .hero-title   { animation: fadeInUp 0.6s ease-out 0.1s both; }
+  .hero-subtitle{ animation: fadeInUp 0.6s ease-out 0.2s both; }
+  .hero-buttons { animation: fadeInUp 0.6s ease-out 0.3s both; }
+  .hero-image   { animation: fadeInRight 0.9s ease-out 0.2s both; }
+
+  /* Scroll-triggered fade-in-up */
+  .animate-on-scroll {
+    opacity: 0;
+    transform: translateY(28px);
+    transition: opacity 0.65s ease-out, transform 0.65s ease-out;
+  }
+  .animate-on-scroll.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* Feature card hover */
+  .feature-card:hover {
+    background: rgba(20,20,23,0.95) !important;
+    border-color: rgba(255,255,255,0.12) !important;
+    transform: translateY(-4px);
+  }
+
+  /* Polaroid hover */
+  .polaroid-fg {
+    transition: transform 0.4s ease;
+  }
+  .polaroid-fg:hover {
+    transform: rotate(0deg) scale(1.04) !important;
+  }
+</style>
+
+<script>
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+        }
+      });
+    },
+    { threshold: 0.1, rootMargin: '-40px' }
+  );
+
+  document.querySelectorAll('.animate-on-scroll').forEach((el) => {
+    observer.observe(el);
+  });
+</script>

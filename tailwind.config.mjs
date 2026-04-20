@@ -21,6 +21,8 @@ export default {
 			  },
 			fontFamily: {
 				inter: ['Inter'],
+				sans: ['"DM Sans"', 'sans-serif'],
+				serif: ['"Crimson Pro"', 'serif'],
 			  },
 		},
 	},

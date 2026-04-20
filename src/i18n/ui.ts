@@ -9,6 +9,57 @@ export const ui = {
   en: {
     appname: "Brendo",
 
+    // ── Index page ────────────────────────────────────────────────────────────
+    "index.title": "Brendo – What to do today?",
+
+    "index.nav.discover": "Discover",
+    "index.nav.memories": "Memories",
+    "index.nav.download": "Download",
+    "index.nav.cta": "Download free",
+
+    "index.hero.badge": "Hungary's new experience finder",
+    "index.hero.title": "What to do",
+    "index.hero.title_highlight": "today?",
+    "index.hero.subtitle": "Discover the newest places, programmes and events around you. Collect moments and share them with the people who matter most.",
+    "index.hero.cta_primary": "Download free",
+    "index.hero.cta_secondary": "Learn more",
+
+    "index.features.heading": "Every adventure in one place",
+    "index.features.subheading": "Brendo is more than an app — it's your personal city guide. Find new places, save your favourites, and keep your memories forever.",
+    "index.features.discover.title": "Discover",
+    "index.features.discover.desc": "Browse local programmes and places, filtered by category and distance from you.",
+    "index.features.travels.title": "My Travels",
+    "index.features.travels.desc": "Track which counties and cities you've visited and view your progress on an interactive map.",
+    "index.features.memories.title": "Memories",
+    "index.features.memories.desc": "Take polaroid-style photos of the places you visit and build your own personal journal.",
+
+    "index.guide.label": "Guide",
+    "index.guide.title": "Explore your",
+    "index.guide.title_highlight": "surroundings",
+    "index.guide.desc": "Whether you're looking for a quiet café for an afternoon read or a vibrant cultural event for the evening, Brendo takes you to the best spots.",
+    "index.guide.location": "Budapest, Danube bank",
+    "index.guide.place_name": "Evening walk above the city",
+    "index.guide.saved": "Saved to favourites",
+
+    "index.memories.label": "Journal",
+    "index.memories.polaroid_name": "Special café",
+    "index.memories.polaroid_date": "OCT. 12. 2024",
+    "index.memories.title": "Every adventure deserves a",
+    "index.memories.title_highlight": "memory",
+    "index.memories.desc": "Capture your most beautiful moments with unique polaroid-style digital photos. Create your own scrapbook of visited places to look back on any time.",
+
+    "index.cta.title": "Ready for the",
+    "index.cta.title_highlight": "adventure?",
+    "index.cta.desc": "Join the Brendo community and share the best places with your friends. Download the app today!",
+    "index.cta.ios": "Download for iOS",
+    "index.cta.android": "Download for Android",
+
+    "index.footer.privacy": "Privacy Policy",
+    "index.footer.terms": "Terms of Use",
+    "index.footer.contact": "Contact",
+    "index.footer.copyright": "All rights reserved.",
+    // ─────────────────────────────────────────────────────────────────────────
+
     "nav.home": "Home",
     "nav.explore": "Explore",
     "nav.download": "Download App",
