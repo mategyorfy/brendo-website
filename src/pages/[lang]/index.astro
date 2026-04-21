@@ -383,20 +383,14 @@ const t = useTranslations(lang)
 					{t('index.cta.desc')}
 				</p>
 				<div class='flex flex-col sm:flex-row items-center justify-center' style='gap: 1rem;'>
-					<a
-						href='#'
-						style='display: flex; align-items: center; justify-content: center; width: 100%; max-width: 16rem; height: 4rem; padding: 0 2.5rem; border-radius: 9999px; background: #5ebd8a; color: black; font-size: 1.125rem; font-weight: 700; text-decoration: none; box-shadow: 0 0 30px rgba(94,189,138,0.3); transition: background 0.2s;'
-						onmouseover="this.style.background='#4fa877'"
-						onmouseout="this.style.background='#5ebd8a'">
+					<span
+						style='display: flex; align-items: center; justify-content: center; width: 100%; max-width: 16rem; height: 4rem; padding: 0 2.5rem; border-radius: 9999px; background: rgba(255,255,255,0.07); color: rgba(255,255,255,0.35); font-size: 1.125rem; font-weight: 700; border: 1px solid rgba(255,255,255,0.1); cursor: default; white-space: nowrap;'>
 						{t('index.cta.ios')}
-					</a>
-					<a
-						href='#'
-						style='display: flex; align-items: center; justify-content: center; width: 100%; max-width: 16rem; height: 4rem; padding: 0 2.5rem; border-radius: 9999px; background: white; color: black; font-size: 1.125rem; font-weight: 700; text-decoration: none; transition: background 0.2s;'
-						onmouseover="this.style.background='rgba(240,240,240,1)'"
-						onmouseout="this.style.background='white'">
+					</span>
+					<span
+						style='display: flex; align-items: center; justify-content: center; width: 100%; max-width: 16rem; height: 4rem; padding: 0 2.5rem; border-radius: 9999px; background: rgba(255,255,255,0.07); color: rgba(255,255,255,0.35); font-size: 1.125rem; font-weight: 700; border: 1px solid rgba(255,255,255,0.1); cursor: default; white-space: nowrap;'>
 						{t('index.cta.android')}
-					</a>
+					</span>
 				</div>
 			</div>
 		</div>
