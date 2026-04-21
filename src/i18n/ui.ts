@@ -59,8 +59,27 @@ export const ui = {
 
 		'index.footer.privacy': 'Privacy Policy',
 		'index.footer.terms': 'Terms of Use',
+		'index.footer.impresszum': 'Impressum',
 		'index.footer.contact': 'Contact',
 		'index.footer.copyright': 'All rights reserved.',
+		// ─────────────────────────────────────────────────────────────────────────
+
+		// ── Impresszum page ───────────────────────────────────────────────────────
+		'impresszum.title': 'Brendo – Impressum',
+		'impresszum.heading': 'Impressum',
+		'impresszum.subtitle': 'Legal information and contacts',
+		'impresszum.intro': 'If you have any problems or just something to ask, feel free to contact us!',
+		'impresszum.developer.heading': 'Developer',
+		'impresszum.developer.name_label': 'Name',
+		'impresszum.address.heading': 'Address',
+		'impresszum.contact.heading': 'Contact',
+		'impresszum.contact.email_label': 'E-mail',
+		'impresszum.contact.response_time': 'We typically respond within 2 business days.',
+		'impresszum.app.heading': 'About the App',
+		'impresszum.app.name_label': 'App name',
+		'impresszum.app.platform_label': 'Platform',
+		'impresszum.back': '← Back to home',
+		'impresszum.footer_copyright': 'All rights reserved.',
 		// ─────────────────────────────────────────────────────────────────────────
 
 		'nav.home': 'Home',
@@ -159,8 +178,27 @@ export const ui = {
 
 		'index.footer.privacy': 'Adatvédelem',
 		'index.footer.terms': 'Felhasználási feltételek',
+		'index.footer.impresszum': 'Impresszum',
 		'index.footer.contact': 'Kapcsolat',
 		'index.footer.copyright': 'Minden jog fenntartva.',
+		// ─────────────────────────────────────────────────────────────────────────
+
+		// ── Impresszum oldal ──────────────────────────────────────────────────────
+		'impresszum.title': 'Brendo – Impresszum',
+		'impresszum.heading': 'Impresszum',
+		'impresszum.subtitle': 'Jogi információk és elérhetőségek',
+		'impresszum.intro': 'Ha esetleg problémába ütközött vagy csak kérdése van hozzánk, keressen bizalommal!',
+		'impresszum.developer.heading': 'Fejlesztő',
+		'impresszum.developer.name_label': 'Név',
+		'impresszum.address.heading': 'Székhely',
+		'impresszum.contact.heading': 'Kapcsolat',
+		'impresszum.contact.email_label': 'E-mail',
+		'impresszum.contact.response_time': 'Általában 2 munkanapon belül válaszolunk.',
+		'impresszum.app.heading': 'Az alkalmazásról',
+		'impresszum.app.name_label': 'Alkalmazás neve',
+		'impresszum.app.platform_label': 'Platform',
+		'impresszum.back': '← Vissza a főoldalra',
+		'impresszum.footer_copyright': 'Minden jog fenntartva.',
 		// ─────────────────────────────────────────────────────────────────────────
 
 		'nav.home': 'Kezdés',
