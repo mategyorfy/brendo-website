@@ -1,6 +1,7 @@
 ---
 import '../styles/global.css'
 import '../../public/styles.css'
+import { AppColors } from '../constants/Colors'
 
 import { getLangFromUrl } from '../i18n/utils'
 
@@ -12,7 +13,6 @@ const lang = getLangFromUrl(Astro.url)
 const { title } = Astro.props
 ---
 
-<!doctype html>
 <html lang={lang}>
 	<head>
 		<meta charset='UTF-8' />
@@ -46,6 +46,26 @@ const { title } = Astro.props
 		<slot />
 	</body>
 </html>
+
+<style is:global define:vars={AppColors.dark}>
+	:root {
+		/* Astro automatically maps the object keys to --key */
+		--background: var(--background);
+		--background-raised: var(--backgroundRaised);
+		--background-card: var(--backgroundCard);
+		--main: var(--main);
+		--main-light: var(--mainLight);
+		--main-dim: var(--mainDim);
+		--main-glow: var(--mainGlow);
+		--gold: var(--gold);
+		--text: var(--text);
+		--text-2: var(--text2);
+		--text-3: var(--text3);
+		--border: var(--border);
+		--border-light: var(--borderLight);
+		--error: var(--error);
+	}
+</style>
 
 <style is:global>
 	html {

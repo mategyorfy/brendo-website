@@ -105,6 +105,57 @@ export const ui = {
   hu: {
     appname: "Brendo",
 
+    // ── Index page ────────────────────────────────────────────────────────────
+    "index.title": "Brendo - Mit csinálunk ma?",
+
+    "index.nav.discover": "Felfedezés",
+    "index.nav.memories": "Emlékeim",
+    "index.nav.download": "Letöltés",
+    "index.nav.cta": "Töltsd le ingyen",
+
+    "index.hero.badge": "Magyarország új élménykeresője",
+    "index.hero.title": "Mit csináljunk",
+    "index.hero.title_highlight": "ma?",
+    "index.hero.subtitle": "Fedezd fel a környéked legújabb helyeit, programjait és eseményeit. Gyűjtsd a pillanatokat, és oszd meg azokat, akikkel a legfontosabb.",
+    "index.hero.cta_primary": "Töltsd le ingyen",
+    "index.hero.cta_secondary": "Tudj meg többet",
+
+    "index.features.heading": "Minden kaland egy helyen",
+    "index.features.subheading": "A Brendo nem csak egy app, hanem a személyes útmutatód a városhoz. Találj új helyeket, mentsd el a kedvenceidet, és őrizd meg az emlékeit.",
+    "index.features.discover.title": "Felfedezés",
+    "index.features.discover.desc": "Böngéssz a helyi programok és helyek között, kategória és távolság alapján szűrve.",
+    "index.features.travels.title": "Utazásaim",
+    "index.features.travels.desc": "Kövesd nyomon, mely megyéket és városokat jártad már be, és tekintsd meg haladásodat egy interaktív térképen.",
+    "index.features.memories.title": "Emlékeim",
+    "index.features.memories.desc": "Készíts polaroid stílusú fotókat a meglátogatott helyekről, és építsd a saját naplódat.",
+
+    "index.guide.label": "Útmutató",
+    "index.guide.title": "Fedezd fel a",
+    "index.guide.title_highlight": "környéked",
+    "index.guide.desc": "Akár egy csendes kávézót keresel a délutáni olvasáshoz, akár egy pezsgő kulturális eseményt az esti kikapcsolódáshoz, a Brendo elvezet a legjobb helyekhez.",
+    "index.guide.location": "Budapest, Duna-part",
+    "index.guide.place_name": "Esti séta a város felett",
+    "index.guide.saved": "Mentve a kedvencek közé",
+
+    "index.memories.label": "Napló",
+    "index.memories.polaroid_name": "Különleges kávézó",
+    "index.memories.polaroid_date": "2024. OKT. 12.",
+    "index.memories.title": "Minden kaland megérdemel egy",
+    "index.memories.title_highlight": "emléket",
+    "index.memories.desc": "Örökítsd meg a legszebb pillanatokat egyedi, polaroid stílusú digitális fotókkal. Hozz létre saját emlékkönyvet a bejárt helyekről, hogy bármikor visszanézhessed őket.",
+
+    "index.cta.title": "Indulhat a",
+    "index.cta.title_highlight": "kaland?",
+    "index.cta.desc": "Csatlakozz a Brendo közösséghez, és oszd meg a legjobb helyeket a barátaiddal. Töltsd le az alkalmazást még ma!",
+    "index.cta.ios": "Letöltés iOS-re",
+    "index.cta.android": "Letöltés Androidra",
+
+    "index.footer.privacy": "Adatvédelem",
+    "index.footer.terms": "Felhasználási feltételek",
+    "index.footer.contact": "Kapcsolat",
+    "index.footer.copyright": "Minden jog fenntartva.",
+    // ─────────────────────────────────────────────────────────────────────────
+
     "nav.home": "Kezdés",
     "nav.explore": "Lehetőségek",
     "nav.download": "Letöltés",
