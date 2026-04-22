@@ -149,7 +149,7 @@ export const ui = {
 		// ── Impresszum oldal ──────────────────────────────────────────────────────
 		'impresszum.title': 'Brendo – Impresszum',
 		'impresszum.heading': 'Impresszum',
-		'impresszum.subtitle': 'Jogi információk és elérhetőségek',
+		'impresszum.subtitle': 'Információk és elérhetőségek',
 		'impresszum.intro': 'Ha esetleg problémába ütközött vagy csak kérdése van hozzánk, keressen bizalommal!',
 		'impresszum.developer.heading': 'Fejlesztő',
 		'impresszum.developer.name_label': 'Név',

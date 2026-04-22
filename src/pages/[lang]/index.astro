@@ -17,6 +17,7 @@ export function getStaticPaths() {
 
 const lang = getLangFromUrl(Astro.url)
 const t = useTranslations(lang)
+const pathSuffix = Astro.url.pathname.replace(/^\/(en|hu)/, '') || '/'
 ---
 
 <Layout title={t('index.title')}>
@@ -63,13 +64,19 @@ const t = useTranslations(lang)
 						onmouseout="this.style.color='rgba(255,255,255,0.65)'">{t('index.nav.download')}</a
 					>
 				</div>
-				<a
-					href='#download'
-					style='border-radius: 9999px; padding: 0.625rem 1.5rem; background: #5ebd8a; color: black; font-weight: 600; font-size: 0.875rem; text-decoration: none; transition: background 0.2s;'
-					onmouseover="this.style.background='#4fa877'"
-					onmouseout="this.style.background='#5ebd8a'">
-					{t('index.nav.cta')}
-				</a>
+				<div style='display: flex; align-items: center; gap: 1rem;'>
+					<div style='display: flex; align-items: center; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.08); border-radius: 9999px; padding: 0.2rem;'>
+						<a href={`/en${pathSuffix}`} style={`padding: 0.25rem 0.625rem; border-radius: 9999px; font-size: 0.75rem; font-weight: 600; text-decoration: none; transition: all 0.2s; ${lang === 'en' ? 'background: rgba(255,255,255,0.12); color: white;' : 'color: rgba(255,255,255,0.35);'}`}>EN</a>
+						<a href={`/hu${pathSuffix}`} style={`padding: 0.25rem 0.625rem; border-radius: 9999px; font-size: 0.75rem; font-weight: 600; text-decoration: none; transition: all 0.2s; ${lang === 'hu' ? 'background: rgba(255,255,255,0.12); color: white;' : 'color: rgba(255,255,255,0.35);'}`}>HU</a>
+					</div>
+					<a
+						href='#download'
+						style='border-radius: 9999px; padding: 0.625rem 1.5rem; background: #5ebd8a; color: black; font-weight: 600; font-size: 0.875rem; text-decoration: none; transition: background 0.2s;'
+						onmouseover="this.style.background='#4fa877'"
+						onmouseout="this.style.background='#5ebd8a'">
+						{t('index.nav.cta')}
+					</a>
+				</div>
 			</div>
 		</nav>
 
