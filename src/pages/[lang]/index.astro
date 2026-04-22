@@ -12,7 +12,7 @@ import travelsImgEn from '../../assets/travelImgEn.png'
 import { getLangFromUrl, useTranslations } from '../../i18n/utils'
 
 export function getStaticPaths() {
-	return [{ params: { lang: 'en' } }, { params: { lang: 'hu' } }]
+	return [{ params: { lang: 'hu' } }]
 }
 
 const lang = getLangFromUrl(Astro.url)
