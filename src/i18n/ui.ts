@@ -13,6 +13,7 @@ export const ui = {
 		'index.title': 'Brendo – What to do today?',
 
 		'index.nav.discover': 'Discover',
+		'index.nav.travels': 'My Travels',
 		'index.nav.memories': 'Memories',
 		'index.nav.download': 'Download',
 		'index.nav.cta': 'Download',
@@ -33,6 +34,11 @@ export const ui = {
 		'index.features.travels.desc': "Track which counties and cities you've visited and view your progress on an interactive map.",
 		'index.features.memories.title': 'Memories',
 		'index.features.memories.desc': 'Take polaroid-style photos of the places you visit and build your own personal journal.',
+
+		'index.travels.label': 'My Travels',
+		'index.travels.title': "Track where you've",
+		'index.travels.title_highlight': 'been',
+		'index.travels.desc': "An interactive map shows which counties and district you've visited. Visit programs and watch your map slowly fill with colour.",
 
 		'index.guide.label': 'Guide',
 		'index.guide.title': 'Explore your',
@@ -131,6 +137,7 @@ export const ui = {
 		'index.title': 'Brendo - Mit csinálunk ma?',
 
 		'index.nav.discover': 'Felfedezés',
+		'index.nav.travels': 'Utazásaim',
 		'index.nav.memories': 'Emlékeim',
 		'index.nav.download': 'Letöltés',
 		'index.nav.cta': 'Letöltés',
@@ -139,7 +146,7 @@ export const ui = {
 		'index.hero.title': 'Mit csináljunk',
 		'index.hero.title_highlight': 'ma?',
 		'index.hero.subtitle':
-			'Fedezd fel a környéked legújabb helyeit, programjait és eseményeit. Gyűjtsd a pillanatokat, és oszd meg azokat, akikkel a legfontosabb.',
+			'Fedezd fel a környéked legújabb helyeit, programjait és eseményeit. Gyűjts élményeket, oszd meg az ötleteidet, és építsünk együtt egy felfedező közösséget.',
 		'index.hero.cta_primary': 'Letöltés',
 		'index.hero.cta_secondary': 'Tudj meg többet',
 
@@ -153,11 +160,17 @@ export const ui = {
 		'index.features.memories.title': 'Emlékeim',
 		'index.features.memories.desc': 'Készíts polaroid stílusú fotókat a meglátogatott helyekről, és építsd a saját naplódat.',
 
+		'index.travels.label': 'Utazásaim',
+		'index.travels.title': 'Kövesd nyomon, hol',
+		'index.travels.title_highlight': 'jártál',
+		'index.travels.desc':
+			'Egy interaktív térkép mutatja, mely megyékben és kerületekben fordultál már meg. Látogass programok, és nézd, ahogy a térképed lassan kiszínesedik.',
+
 		'index.guide.label': 'Útmutató',
 		'index.guide.title': 'Fedezd fel a',
 		'index.guide.title_highlight': 'környéked',
 		'index.guide.desc':
-			'Akár egy csendes kávézót keresel a délutáni olvasáshoz, akár egy pezsgő kulturális eseményt az esti kikapcsolódáshoz, a Brendo elvezet a legjobb helyekhez.',
+			'Akár egy csendes kávézót keresel a első randihoz, akár egy pezsgő kulturális eseményt az esti kikapcsolódáshoz, a Brendo elvezet a legjobb helyekhez.',
 		'index.guide.location': 'Budapest, Duna-part',
 		'index.guide.place_name': 'Esti séta a város felett',
 		'index.guide.saved': 'Mentve a kedvencek közé',
@@ -168,7 +181,7 @@ export const ui = {
 		'index.memories.title': 'Minden kaland megérdemel egy',
 		'index.memories.title_highlight': 'emléket',
 		'index.memories.desc':
-			'Örökítsd meg a legszebb pillanatokat egyedi, polaroid stílusú digitális fotókkal. Hozz létre saját emlékkönyvet a bejárt helyekről, hogy bármikor visszanézhessed őket.',
+			'Örökítsd meg a legszebb pillanatokat polariod fotókkal. Hozz létre saját emlékkönyvet a bejárt helyekről, hogy bármikor visszanézhessed őket.',
 
 		'index.cta.title': 'Indulhat a',
 		'index.cta.title_highlight': 'kaland?',
