@@ -19,7 +19,7 @@ export const ui = {
 		'index.hero.badge': "Hungary's new experience finder",
 		'index.hero.title': 'What to do',
 		'index.hero.title_highlight': 'today?',
-		'index.hero.subtitle': 'Discover the newest places, programmes and events around you. Collect moments and share them with the people who matter most.',
+		'index.hero.subtitle': "Discover the newest places, programmes and events around you. Collect experiences, share your ideas, and let's build an explorer community together.",
 		'index.hero.cta_primary': 'Download free',
 		'index.hero.cta_secondary': 'Learn more',
 
@@ -27,9 +27,9 @@ export const ui = {
 		'index.features.subheading':
 			"Brendo is more than an app — it's your personal guide to the country. Discover new places, save your favourites, and keep your memories forever.",
 		'index.features.discover.title': 'Discover',
-		'index.features.discover.desc': 'Browse local programmes and places, filtered by category, group size, or even price.',
+		'index.features.discover.desc': 'Browse local programmes and places, filtered by category, group size, or price.',
 		'index.features.travels.title': 'My Travels',
-		'index.features.travels.desc': "Track which counties and cities you've visited and view your progress on an interactive map.",
+		'index.features.travels.desc': "Track which counties and districts you've visited and view your progress on an interactive map.",
 		'index.features.memories.title': 'Memories',
 		'index.features.memories.desc': 'Take polaroid-style photos of the places you visit and build your own personal journal.',
 
@@ -42,7 +42,7 @@ export const ui = {
 		'index.guide.title': 'Explore your',
 		'index.guide.title_highlight': 'surroundings',
 		'index.guide.desc':
-			"Whether you're looking for a quiet café for an afternoon read or a vibrant cultural event for the evening, Brendo takes you to the best spots.",
+			"Whether you're looking for a quiet café for a first date or a vibrant cultural event for the evening, Brendo takes you to the best spots.",
 		'index.guide.location': 'Budapest, Danube bank',
 		'index.guide.place_name': 'Evening walk above the city',
 		'index.guide.saved': 'Saved to favourites',
@@ -53,7 +53,7 @@ export const ui = {
 		'index.memories.title': 'Every adventure deserves a',
 		'index.memories.title_highlight': 'memory',
 		'index.memories.desc':
-			'Capture your most beautiful moments with unique polaroid-style digital photos. Create your own scrapbook of visited places to look back on any time.',
+			'Capture your most beautiful moments with unique polaroid-style photos. Create your own scrapbook of visited places to look back on any time.',
 
 		'index.cta.title': 'Ready for the',
 		'index.cta.title_highlight': 'adventure?',
@@ -71,7 +71,7 @@ export const ui = {
 		// ── Impresszum page ───────────────────────────────────────────────────────
 		'impresszum.title': 'Brendo – Impressum',
 		'impresszum.heading': 'Impressum',
-		'impresszum.subtitle': 'Legal information and contacts',
+		'impresszum.subtitle': 'Information and contacts',
 		'impresszum.intro': 'If you have any problems or just something to ask, feel free to contact us!',
 		'impresszum.developer.heading': 'Developer',
 		'impresszum.developer.name_label': 'Name',
