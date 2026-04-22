@@ -25,9 +25,9 @@ export const ui = {
 
 		'index.features.heading': 'Every adventure in one place',
 		'index.features.subheading':
-			"Brendo is more than an app — it's your personal city guide. Find new places, save your favourites, and keep your memories forever.",
+			"Brendo is more than an app — it's your personal guide to the country. Discover new places, save your favourites, and keep your memories forever.",
 		'index.features.discover.title': 'Discover',
-		'index.features.discover.desc': 'Browse local programmes and places, filtered by category and distance from you.',
+		'index.features.discover.desc': 'Browse local programmes and places, filtered by category, group size, or even price.',
 		'index.features.travels.title': 'My Travels',
 		'index.features.travels.desc': "Track which counties and cities you've visited and view your progress on an interactive map.",
 		'index.features.memories.title': 'Memories',
@@ -57,7 +57,7 @@ export const ui = {
 
 		'index.cta.title': 'Ready for the',
 		'index.cta.title_highlight': 'adventure?',
-		'index.cta.desc': 'Join the Brendo community and share the best places with your friends. Download the app today!',
+		'index.cta.desc': 'Join the Brendo community and collect memories with your companions. Download the app today!',
 		'index.cta.ios': 'iOS – Coming Soon',
 		'index.cta.android': 'Android – Coming Soon',
 
@@ -102,9 +102,9 @@ export const ui = {
 
 		'index.features.heading': 'Minden kaland egy helyen',
 		'index.features.subheading':
-			'A Brendo nem csak egy app, hanem a személyes útmutatód a városhoz. Találj új helyeket, mentsd el a kedvenceidet, és őrizd meg az emlékeit.',
+			'A Brendo nem csak egy app, hanem a személyes útmutatód az országhoz. Fedezz fel új helyeket, mentsd el a kedvenceidet, és őrizd meg az emlékeit.',
 		'index.features.discover.title': 'Felfedezés',
-		'index.features.discover.desc': 'Böngéssz a helyi programok és helyek között, kategória és távolság alapján szűrve.',
+		'index.features.discover.desc': 'Böngéssz a helyi programok és helyek között, kategória, társaság vagy akár ár alapján szűrve.',
 		'index.features.travels.title': 'Utazásaim',
 		'index.features.travels.desc': 'Kövesd nyomon, mely megyéket és városokat jártad már be, és tekintsd meg haladásodat egy interaktív térképen.',
 		'index.features.memories.title': 'Emlékeim',
@@ -114,13 +114,13 @@ export const ui = {
 		'index.travels.title': 'Kövesd nyomon, hol',
 		'index.travels.title_highlight': 'jártál',
 		'index.travels.desc':
-			'Egy interaktív térkép mutatja, mely megyékben és kerületekben fordultál már meg. Látogass programok, és nézd, ahogy a térképed lassan kiszínesedik.',
+			'Egy interaktív térkép mutatja, mely megyékben és kerületekben fordultál már meg. Látogass programokat, és nézd, ahogy a térképed lassan kiszínesedik.',
 
 		'index.guide.label': 'Útmutató',
 		'index.guide.title': 'Fedezd fel a',
 		'index.guide.title_highlight': 'környéked',
 		'index.guide.desc':
-			'Akár egy csendes kávézót keresel a első randihoz, akár egy pezsgő kulturális eseményt az esti kikapcsolódáshoz, a Brendo elvezet a legjobb helyekhez.',
+			'Akár egy csendes kávézót keresel az első randihoz, akár egy pezsgő kulturális eseményt az esti kikapcsolódáshoz, a Brendo elvezet a legjobb helyekhez.',
 		'index.guide.location': 'Budapest, Duna-part',
 		'index.guide.place_name': 'Esti séta a város felett',
 		'index.guide.saved': 'Mentve a kedvencek közé',
@@ -131,11 +131,11 @@ export const ui = {
 		'index.memories.title': 'Minden kaland megérdemel egy',
 		'index.memories.title_highlight': 'emléket',
 		'index.memories.desc':
-			'Örökítsd meg a legszebb pillanatokat polariod fotókkal. Hozz létre saját emlékkönyvet a bejárt helyekről, hogy bármikor visszanézhessed őket.',
+			'Örökítsd meg a legszebb pillanatokat polariod fotókon. Hozz létre saját emlékkönyvet a bejárt helyekről, hogy bármikor visszanézhesd őket.',
 
 		'index.cta.title': 'Indulhat a',
 		'index.cta.title_highlight': 'kaland?',
-		'index.cta.desc': 'Csatlakozz a Brendo közösséghez, és oszd meg a legjobb helyeket a barátaiddal. Töltsd le az alkalmazást még ma!',
+		'index.cta.desc': 'Csatlakozz a Brendo közösséghez, és gyűjts emlékeket társaiddal. Töltsd le az alkalmazást még ma!',
 		'index.cta.ios': 'iOS – Hamarosan',
 		'index.cta.android': 'Android – Hamarosan',
 
