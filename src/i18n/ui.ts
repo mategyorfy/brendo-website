@@ -139,7 +139,7 @@ export const ui = {
 		'index.cta.ios': 'iOS – Hamarosan',
 		'index.cta.android': 'Android – Hamarosan',
 
-		'index.footer.privacy': 'Adatvédelem',
+		'index.footer.privacy': 'Adatvédelmi nyilatkozat',
 		'index.footer.terms': 'Felhasználási feltételek',
 		'index.footer.impresszum': 'Impresszum',
 		'index.footer.contact': 'Kapcsolat',
