@@ -462,52 +462,53 @@ const t = useTranslations(lang)
 
 	<!-- Footer -->
 	<footer style='padding: 3rem 0; border-top: 1px solid rgba(255,255,255,0.06); background: rgba(0,0,0,0.45);'>
-		<div
-			style='max-width: 1280px; margin: 0 auto; padding: 0 1.5rem; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 1.5rem;'>
-			<div style='display: flex; flex-direction: row; align-items: center; gap: 0.5rem;'>
-				<Image
-					src={headerLogo}
-					alt='Brendo'
-					loading='lazy'
-					widths={[120]}
-					sizes='120px'
-					style='height: 1.75rem; width: 1.75rem; object-fit: contain;'
-				/>
-				<span style="font-family: 'Crimson Pro', serif; font-size: 1.5rem; font-weight: 700; letter-spacing: -0.02em; color: white;">Brendo</span>
+		<div style='max-width: 1280px; margin: 0 auto; padding: 0 1.5rem;'>
+			<div class='flex flex-col md:flex-row md:items-center md:justify-between' style='gap: 1.5rem;'>
+				<div style='display: flex; align-items: center; gap: 0.5rem;'>
+					<Image
+						src={headerLogo}
+						alt='Brendo'
+						loading='lazy'
+						widths={[120]}
+						sizes='120px'
+						style='height: 1.75rem; width: 1.75rem; object-fit: contain;'
+					/>
+					<span style="font-family: 'Crimson Pro', serif; font-size: 1.5rem; font-weight: 700; letter-spacing: -0.02em; color: white;">Brendo</span>
+				</div>
+				<div class='flex flex-col md:flex-row md:flex-wrap' style='gap: 0.75rem 1.5rem; font-size: 0.875rem;'>
+					<a
+						href='/docs/privacypolicy.pdf'
+						style='color: rgba(255,255,255,0.45); text-decoration: none; transition: color 0.2s;'
+						onmouseover="this.style.color='#5ebd8a'"
+						onmouseout="this.style.color='rgba(255,255,255,0.45)'">{t('index.footer.privacy')}</a
+					>
+					<a
+						href='/docs/aszf.pdf'
+						style='color: rgba(255,255,255,0.45); text-decoration: none; transition: color 0.2s;'
+						onmouseover="this.style.color='#5ebd8a'"
+						onmouseout="this.style.color='rgba(255,255,255,0.45)'">{t('index.footer.terms')}</a
+					>
+					<a
+						href={`/${lang}/impresszum`}
+						style='color: rgba(255,255,255,0.45); text-decoration: none; transition: color 0.2s;'
+						onmouseover="this.style.color='#5ebd8a'"
+						onmouseout="this.style.color='rgba(255,255,255,0.45)'">{t('index.footer.impresszum')}</a
+					>
+					<a
+						href='mailto:brendoapptest@gmail.com'
+						style='color: rgba(255,255,255,0.45); text-decoration: none; transition: color 0.2s;'
+						onmouseover="this.style.color='#5ebd8a'"
+						onmouseout="this.style.color='rgba(255,255,255,0.45)'">{t('index.footer.contact')}</a
+					>
+				</div>
+				<p style='font-size: 0.875rem; color: rgba(255,255,255,0.3); margin: 0;'>{new Date().getFullYear()} Brendo.</p>
 			</div>
-			<div style='display: flex; gap: 1.5rem; font-size: 0.875rem; color: rgba(255,255,255,0.45);'>
-				<a
-					href='/docs/privacypolicy.pdf'
-					style='color: rgba(255,255,255,0.45); text-decoration: none; transition: color 0.2s;'
-					onmouseover="this.style.color='#5ebd8a'"
-					onmouseout="this.style.color='rgba(255,255,255,0.45)'">{t('index.footer.privacy')}</a
-				>
-				<a
-					href='/docs/aszf.pdf'
-					style='color: rgba(255,255,255,0.45); text-decoration: none; transition: color 0.2s;'
-					onmouseover="this.style.color='#5ebd8a'"
-					onmouseout="this.style.color='rgba(255,255,255,0.45)'">{t('index.footer.terms')}</a
-				>
-				<a
-					href={`/${lang}/impresszum`}
-					style='color: rgba(255,255,255,0.45); text-decoration: none; transition: color 0.2s;'
-					onmouseover="this.style.color='#5ebd8a'"
-					onmouseout="this.style.color='rgba(255,255,255,0.45)'">{t('index.footer.impresszum')}</a
-				>
-				<a
-					href='mailto:brendoapptest@gmail.com'
-					style='color: rgba(255,255,255,0.45); text-decoration: none; transition: color 0.2s;'
-					onmouseover="this.style.color='#5ebd8a'"
-					onmouseout="this.style.color='rgba(255,255,255,0.45)'">{t('index.footer.contact')}</a
-				>
-			</div>
-			<p style='font-size: 0.875rem; color: rgba(255,255,255,0.3);'>{new Date().getFullYear()} Brendo.</p>
 		</div>
 	</footer>
 </Layout>
 
 <style is:global>
-	body {
+	html, body {
 		background-color: #0c0c0f;
 		margin: 0;
 		overflow-x: hidden;
